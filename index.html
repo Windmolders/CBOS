@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBOS Mobile App</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <script src="js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+
+  <!-- body content here -->
+  
+  
+  
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">CBOS</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Wizard</label></li>
+        <li><a href="javascript:home()">Home</a></li>
+        <li><a href="javascript:start()">Start</a></li>
+        <li><a href="javascript:push()">Push Ups</a></li>
+        <li><a href="javascript:sit()">Sit Ups</a></li>
+        <li><a href="javascript:run()">2400m Lopen</a></li>
+        <li><a href="javascript:result()">Uitslag</a></li>
+      </ul>
+    </aside>
+
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Info</label></li>
+        <li><a href="#">Developed by</a></li>
+        <li><a href="#">Windmolders Jonas</a></li>      
+      </ul>
+    </aside>
+
+    <section class="main-section" >
+    
+   
+    <div class="row volledig" id="z-home">
+	  	<div class="large-6 columns text-center vol">
+	  		<a href="javascript:start()" class="button success expand z-margin-b hoofditem" >Start Evaluatie</a>
+	  	</div>	  
+
+	  	<div class="large-6 columns text-center vol">
+	  		<img src="img/defensie.jpg" class="hoofdimg" />
+	  	</div>	  
+	</div>
+	
+<div class="row volledig" id="z-start">
+	  	<div class="medium-12 columns text-center volledig">
+	  		
+	  		<h1 class="z-margin-b">Ik ben een </h1>
+	  		
+	  		<a href="javascript:sex()" class="large button dropdown expand z-margin-b" id="sex">Man</a>
+	  		
+	  		<h1 class="z-margin-b">Ik ben tussen</h1>
+	  		
+	  		<a href="javascript:age()" class="large button dropdown expand z-margin-b" id="age">20-29</a>
+	  			
+	  		<h1 class="z-margin-b">Jaar.</h1>
+	  		
+	  		<a href="javascript:push()" class="large button success expand z-margin-b" >Volgende Pagina</a>
+	  		
+	  	</div>	  
+	</div>
+	
+	<div class="row volledig" id="z-push">
+	  	<div class="row text-center">
+	  		<h1 class="z-margin-b " >Push Ups</h1>
+	  	</div>	  
+		<div class="row">  		
+	  		  <input id="upjes" name="upjes" type="number" placeholder="Aantal Push-ups" style="width:90%;margin:auto;" />	  		
+	  	</div>	
+	  	<div class="row text-center ">
+	  		<img src="img/push.png" class="z-margin-b deelimg" />
+	  		
+	  		<a href="javascript:sit()" class="large button success expand z-margin-b" >Volgende Pagina</a>
+	  	</div> 
+	</div>
+	
+	
+	
+	<div class="row volledig" id="sexpage">
+	  	<div class="small-6 columns text-center volledig z-margin-b">
+	  		<img  src="img/man.png" class="clickf" onclick="javascript:setsex(0)"/>	  		
+	  	</div>	  
+	  	<div class="small-6 columns text-center volledig z-margin-b" >
+	  		<img  src="img/vrouw.png" class="clickf" onclick="javascript:setsex(1)"/>	  		
+	  	</div>	
+	</div>
+	
+	<div class="row volledig" id="agepage">
+		<div class="row">
+	  	<div class="medium-6 columns text-center volledig z-margin-b">
+	  		<a href="javascript:setage(0)" class="large button dropdown expand z-margin-b" > &lt;20</a> 		
+	  	</div>	  
+	  	<div class="medium-6 columns text-center volledig z-margin-b" >
+	  		<a href="javascript:setage(1)" class="large button dropdown expand z-margin-b" >20-29</a>	  		
+	  	</div>
+	  	</div>	
+	  	<div class="row">
+	  	<div class="medium-6 columns text-center volledig z-margin-b">
+	  		<a href="javascript:setage(2)" class="large button dropdown expand z-margin-b" >30-39</a> 		
+	  	</div>	  
+	  	<div class="medium-6 columns text-center volledig z-margin-b" >
+	  		<a href="javascript:setage(3)" class="large button dropdown expand z-margin-b" >40-49</a>	  		
+	  	</div>
+	  	</div>	
+	  	<div class="row">
+	  	<div class="medium-6 columns text-center volledig z-margin-b">
+	  		<a href="javascript:setage(4)" class="large button dropdown expand z-margin-b" >&gt;50</a> 		
+	  	</div>	  
+
+	  	</div>	
+	</div>
+	
+	<div class="row volledig" id="z-sit">
+	  	<div class="row text-center">
+	  		<h1 class="z-margin-b " >Sit Ups</h1>
+	  	</div>	  
+		<div class="row">  		
+	  		  <input id="sitjes" name="stijes" type="number" placeholder="Aantal Sit-ups" style="width:90%;margin:auto;" />	  		
+	  	</div>	
+	  	<div class="row text-center ">
+	  		<img src="img/situp.png" class="z-margin-b deelimg" />
+	  		
+	  		<a href="javascript:run()" class="large button success expand z-margin-b" >Volgende Pagina</a>
+	  	</div> 	  
+	</div>
+	
+	<div class="row volledig" id="z-run">
+	  	<div class="row text-center">
+	  		<h1 class="z-margin-b " >2400m Lopen</h1>
+	  	</div>	  
+		<div class="row">  		
+	  		  <input id="tijd" name="tijd" type="time" placeholder="mm:ss" style="width:90%;margin:auto;" />	  		
+	  	</div>	
+	  	<div class="row text-center ">
+	  		<img src="img/run.png" class="z-margin-b deelimg" />
+	  		
+	  		<a href="javascript:result()" class="large button success expand z-margin-b" >Bereken resultaat</a>
+	  	</div>   
+	</div>
+	
+	<div class="row volledig" id="z-result">
+	  	
+	  	<div class="row">
+	  	
+	  	<div class="small-6 columns text-center volledig z-margin-b">
+	  		<div data-alert class="alert-box info z-margin-b">
+			  Push Ups
+			  
+			</div>
+	  	</div>	  
+	  	<div class="small-6 columns text-center volledig z-margin-b" >
+	  		<div data-alert class="alert-box z-margin-b">
+  			<span id="rpush">0</span> / 20
+			</div>   		
+	  	</div>	  	
+	  	</div>
+	  	<div class="row">
+	  	<div class="small-6 columns text-center volledig z-margin-b">
+	  		<div data-alert class="alert-box info z-margin-b">
+			  Sit Ups
+			  
+			</div>	
+	  	</div>	  
+	  	<div class="small-6 columns text-center volledig z-margin-b" >
+	  		<div data-alert class="alert-box z-margin-b">
+  			<span id="rsit">0</span> / 20
+			</div> 	  		
+	  	</div>
+	  	 </div>
+	  	<div class="row">
+	  	<div class="small-6 columns text-center volledig z-margin-b">
+	  		<div data-alert class="alert-box info z-margin-b">
+			  2400m Lopen
+			  
+			</div>
+	  	</div>	  
+	  	<div class="small-6 columns text-center volledig z-margin-b" >
+	  		<div data-alert class="alert-box z-margin-b">
+  			<span id="rrun">0</span> / 20
+			</div>  		
+	  	</div>
+	  	
+	  	</div>
+	  	
+	  		<div class="row text-center panel callout z-margin-b">
+	  			<h1>Resultaat</h1>
+	  			<h1 id="resultaat">0%</h1>
+	  		</div>
+	  	
+	</div>
+    
+    
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+  
+  
+  
+  <!-- body content here -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
